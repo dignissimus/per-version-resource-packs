@@ -27,7 +27,16 @@ public class PVSListener implements Listener {
         Player p = e.getPlayer();
         Integer v = ProtocolLibrary.getProtocolManager().getProtocolVersion(p);
         versions.put(p.getUniqueId(), v);
-        p.setResourcePack(getResourcePack(p.getWorld(), v));
+        String rp = getResourcePack(p.getWorld(), v);
+        setResourcePack(p, rp);
+    }
+
+    public void setResourcePack(Player player, String string){
+        if(string == null){
+            plugin.getLogger().info("Did you set a default resource pack? ");
+            return;
+        }
+        player.setResourcePack(string);
     }
 
     @EventHandler
