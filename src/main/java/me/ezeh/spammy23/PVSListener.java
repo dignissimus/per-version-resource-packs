@@ -48,7 +48,7 @@ public class PVSListener implements Listener {
     public void onPlayerEnterWorld(PlayerTeleportEvent e) {
         if (e.getFrom().getWorld() == e.getFrom().getWorld()) return;
         Player p = e.getPlayer();
-        p.setResourcePack(getResourcePack(e.getTo().getWorld(), versions.get(p.getUniqueId())));
+        setResourcePack(p, getResourcePack(e.getTo().getWorld(), versions.get(p.getUniqueId())));
     }
 
     private String getResourcePack(World w, int version) {
