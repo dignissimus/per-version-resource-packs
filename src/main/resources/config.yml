@@ -1,0 +1,8 @@
+resources:
+  default: # the default Texture pack
+  defaults:
+    47: # default for protocol version 47
+  world:
+    default: # insert Default Resource Pack
+    # versions
+    47: # insert texture pack for protocol version

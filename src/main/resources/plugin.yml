@@ -1,0 +1,7 @@
+name: Per-version Texture Packs
+version: ${project.version}
+main: me.ezeh.spammy23.Perversiontps
+authors: [spammy23]
+description: Per-version texture packs
+website: spammy23.ezeh.me
+depends: ProtocolLib
